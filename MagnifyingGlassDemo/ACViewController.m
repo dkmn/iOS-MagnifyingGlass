@@ -10,6 +10,7 @@
 #import "ACMagnifyingView.h"
 #import "ACMagnifyingGlass.h"
 #import "ACLoupe.h"
+#import "ACRectangularMagnifier.h"
 
 @implementation ACViewController
 
@@ -22,17 +23,15 @@
     [super viewDidLoad];
 	
 	// custom magnifier
-	/*
-	ACMagnifyingGlass *mag = [[ACMagnifyingGlass alloc] initWithFrame:CGRectMake(0, 0, 120, 120)];
+	ACRectangularMagnifier *mag = [[ACRectangularMagnifier alloc] initWithFrame:CGRectMake(0, 0, 200, 120)];
 	mag.scale = 2;
 	self.magnifyingView.magnifyingGlass = mag;
-	*/
 	
 	// loupe
-	ACLoupe *loupe = [[ACLoupe alloc] init];
+/**	ACLoupe *loupe = [[ACLoupe alloc] init];
 	self.magnifyingView.magnifyingGlass = loupe;
 	loupe.scaleAtTouchPoint = NO;
-
+**/
 	 
 }
 
